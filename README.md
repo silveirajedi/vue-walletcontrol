@@ -24,4 +24,10 @@ npm run dev
 npm run build
 ```
 
+### Docker Nginx test for Production
+
+```sh
+docker run -p 80:80 --name walletcontrol -v $(pwd)/dist:/usr/share/nginx/html -d nginx
+```
+
 #### License MIT
